@@ -1,0 +1,39 @@
+ALGORITHM number of characters in the string
+VAR
+    compteur : INTEGER = 0;
+    str :  STRING;
+BEGIN
+    FOR (int i=0; i< str.length(); i++) do
+    IF (str.charAt(i) != " " ) THEN
+        compteur = compteur + 1;
+    END_IF
+    END_FOR
+    Write(compteur)
+END
+ALGORITHM number of words in a string
+VAR
+    str : STRING;
+    compteur : INTEGER = 1;
+BEGIN
+    FOR i in str do
+    IF i == " " then
+        compteur = compteur + 1;
+    END_IF
+        
+    END_FOR
+    Write(compteur);
+END
+ALGORITHM nb_vowels
+VAR
+    str : STRING;
+    compteur : INTEGER=0;
+    vowels : CHAR ["a","e","i","o","u","y"];
+BEGIN
+    FOR (int i = 0; i = str.length - 1 ;i++ ) DO
+        IF str.charAt(i) = vowels THEN
+        compteur++;
+        END IF
+    END_FOR
+    
+    Write (compteur);
+END
